@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom"
 import { goToPokemonDetail } from "../../routes/cordinator"
 import GlobalStateContext from "../../global/GlobalStateContext";
 
-const PokemonCard = ({ pokemon, isPokedex }) => { //ao invés de colocar (props), já desestruturou assim: {pokemon} // logo, props === {nome da prop}
+const PokemonCard = ({ pokemon, isPokedex }) => {
     const history = useHistory()
     const { pokedex, setPokedex, pokemons, setPokemon } = useContext(GlobalStateContext)
 

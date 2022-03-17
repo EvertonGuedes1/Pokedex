@@ -9,16 +9,24 @@ import PokedexScreen from "../screens/PokedexScreen/PokedexScreen"
 const Router = () => {
     return (
         <BrowserRouter>
+
             <Switch>
+
                 <Route exact path={"/"} component={PokemonListScreen} />
+
                 <Route exact path={"/pokemon/:name"} component={PokemonDetailScrenn} />
+
                 <Route exact path={"/pokedex"} component={PokedexScreen} />
+
                 <Route>
                     <div>
-                        Erro: Página não encontrada
+                        <h1>Erro!</h1>
+                        <h3>Página não encontrada...</h3>
                     </div>
                 </Route>
+
             </Switch>
+
         </BrowserRouter>
     )
 }
