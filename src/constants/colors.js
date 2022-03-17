@@ -1,2 +1,3 @@
-export const mainColor = "#30a7d7";
-export const backgroundCard = "#f1f1f1";
+export const HeaderColor = "#ef5350";
+export const BackGroundColor = "#ffffff";
+export const CardColor = "#08acd5";
