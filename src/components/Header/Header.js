@@ -1,7 +1,7 @@
 import React from "react";
 import { Head, Title, LeftButtonHeader, RightButtonHeader } from "./styled";
 import { useHistory } from "react-router-dom"
-import { goToPokedex } from "../../routes/cordinator"
+
 
 const Header = ({ title, leftButtonFunction, showRigthButton, rigthButtonFunction }) => {
     const history = useHistory()
