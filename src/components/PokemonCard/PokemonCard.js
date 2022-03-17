@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Card, ContainerButtons, LeftButton, RightButton } from "./styled";
 import { useHistory } from "react-router-dom"
 import { goToPokemonDetail } from "../../routes/cordinator"
-import { GlobalStateContext } from "../../global/GlobalStateContext";
+import GlobalStateContext from "../../global/GlobalStateContext";
 
 const PokemonCard = ({ pokemon, isPokedex }) => { //ao invés de colocar (props), já desestruturou assim: {pokemon} // logo, props === {nome da prop}
     const history = useHistory()
